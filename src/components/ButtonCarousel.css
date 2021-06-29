@@ -1,0 +1,82 @@
+.arrow-prev {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.arrow-next {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.carousel {
+    box-sizing: border-box;
+    width: auto; /* 2035px */
+    height: auto; /* 169px */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-inline: 10%;
+    background-color: #ffffff;
+    overflow: hidden;
+    scroll-behavior: auto;
+}
+
+.carousel-buttons {
+    box-sizing: border-box;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--token-a9e46ea4-9683-45a9-a4cc-66c814e9860a, #f27980);
+    overflow: hidden;
+    border-radius: 102px;
+    border: 4px solid var(--token-a9e46ea4-9683-45a9-a4cc-66c814e9860a, #f27980) /* {"name":"Pink"} */;
+    cursor: pointer;
+}
+
+.carousel-links {
+   
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    align-content:center;
+    color: #FFFFFF;
+    margin: 
+}
+
+.menu-item {
+    padding: 0 40px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+
+}
+.menu-item-wrapper.active {
+    border: 1px blue solid;
+}
+.menu-item.active {
+    border: 1px green solid;
+}
+
+
+
+.scroll {
+    flex-shrink: 0;
+    width: 1440px;
+    height: 220px;
+}
+
+.scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+}
+

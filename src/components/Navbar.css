@@ -1,4 +1,18 @@
-.NavBarLogo {
+.nav-avatar {
+  align-self: center;
+  cursor:pointer;
+  margin-left:4%;
+}
+
+.nav-bar {
+  flex-direction: row;
+  list-style-type: none;
+  overflow: visible;
+  display:flex;
+  align-content: center;
+}
+
+.nav-bar-logo {
   width: 340px;
   height: 85px;
   overflow: visible;
@@ -6,10 +20,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 5%;
+  margin-left: 3%;
+  list-style-type: none;
+  cursor: pointer;
 }
 
-.NavBarItems {
+
+.nav-buttons {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.nav-links {
   box-sizing: border-box;
   width: 160px;
   height: 75px;
@@ -19,9 +42,14 @@
   align-items: center;
   padding: 0px 37px 0px 37px;
   background-color: #ffffff;
+  text-decoration: none;
   overflow: hidden;
+  color: #525252;
+  list-style-type: none;
 }
-
-.NavBarItems:hover {
-  background-color: #525252;
+.nav-links:hover {
+  color: #999999;
+}
+.nav-links:focus {
+  color: #f27980;
 }
