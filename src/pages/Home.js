@@ -5,15 +5,18 @@ import ButtonCarousel from "../components/ButtonCarousel";
 import './Home.css';
 import Navbar from '../components/Navbar';
 import PaddlingMan from '../videos/paddling-man.mp4';
-
+import EventCards from "../components/EventCards";
+import CategoryCards from "../components/CategoryCards"
 function Home() {
     return (
       <div className="home-scroll">
         <Navbar />
+
         <img src={NewHeaderImage} alt="New Header"
           className="new-header-image"/>
 
         <ButtonCarousel />
+            
 
         <div className="video-card">
           <div className="video-card-text">
@@ -32,16 +35,24 @@ function Home() {
           </video>
         </div>
 
+        <div className="event-background">
+          <EventCards/>
+        </div>
+
+        <div> 
+          <CategoryCards/>
+        </div>
+        
         <div className="contact">
           <div>
-            <img src={ContactUsImage} className="contact-us-image"/>
+            <img src={ContactUsImage} alt="contact-us" className="contact-us-image"/>
             <button className="contact-button">
               <text className="contact-button-text">
               문의하기
               </text>
             </button>
           </div>
-          <img src={ContactImage} className="contact-image"></img>
+          <img src={ContactImage} alt="contact" className="contact-image"></img>
         </div>
 
         <footer className="footer" >

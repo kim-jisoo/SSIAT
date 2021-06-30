@@ -2,69 +2,41 @@ import React, {Component} from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import './ButtonCarousel.css';
 import {ButtonItems} from "./ButtonItems";
+import Carousel from 'react-multi-carousel';
+import { title } from 'process';
 
-const list = [
-    { name: 'item1' },
-    { name: 'item2' },
-    { name: 'item3' },
-    { name: 'item4' },
-    { name: 'item5' },
-    { name: 'item6' },
-    { name: 'item7' },
-    { name: 'item8' },
-    { name: 'item9' }
-  ];
-
-// One item component
-// selected prop will be passed
-const MenuItem = ({text, selected}) => {
-    return <div
-      className={`menu-item ${selected ? 'active' : ''}`}
-      >{text}</div>;
-  };
-  
-// All items component
-// Important! add unique key
-export const Menu = (list, selected) =>
-list.map(el => {
-    const {name} = el;
-
-    return <MenuItem text={name} key={name} selected={selected} />;
-});
-
-
-const Arrow = ({ text, className }) => {
-    return (
-        <div
-        className={className}
-        >{text}</div>
-    );
-};
-
-
-const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
-const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
-
-const selected = 'item1';
 
 class ButtonCarousel extends Component {
-    constructor(props) {
-        super(props);
-        // call it again if items count changes
-        this.menuItems = Menu(list, selected);
-      }
-    
-      state = {
-        selected
-      };
-    
-      onSelect = key => {
-        this.setState({ selected: key });
-      }
 
     render() {
-        const {selected} = this.state;
-        const menu =this.menu;
+        const responsive = {
+            
+            superLargeDesktop: {
+              // the naming can be any, depends on you.
+              breakpoint: { max: 4000, min: 3000 },
+              items: 5
+            },
+            desktop: {
+              breakpoint: { max: 3000, min: 1024 },
+              items: 3
+            },
+            tablet: {
+              breakpoint: { max: 1024, min: 464 },
+              items: 2
+            },
+            mobile: {
+              breakpoint: { max: 464, min: 0 },
+              items: 1
+            }
+          };
+          const fakerData = Array(12)
+          .fill(0)
+          .map((item, index) => {
+            return {
+              image: ButtonItems[index],
+              headline: "w3js -> web front-end studio",
+            };
+          });
 
         return ( 
             // <div >
@@ -89,7 +61,26 @@ class ButtonCarousel extends Component {
                         )
                     })}
             </ul>
-         
+
+            // <Carousel swipeable draggable 
+            //     responsive={responsive} 
+            //     arrows="false" infinite>
+                // {ButtonItems.map(item => (
+                 
+                //             <button>
+                //                 <a alt="nav-urls"  onClick={e => {
+                //                     if (this.state.isMoving) {
+                //                         e.preventDefault();
+                //                         } 
+                //                     }} 
+                //                     className={item.cName} 
+                //                 href={item.url}> {item.title} </a>
+                //             </button>
+                  
+                // ))}
+            // </Carousel>
+           
+  
         )
     }
 }

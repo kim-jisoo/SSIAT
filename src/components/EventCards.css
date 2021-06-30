@@ -1,0 +1,61 @@
+.event-cards-arrow {
+  cursor: pointer;
+}
+.event-cards-background {
+  height: 716px;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.event-cards-category-name {
+  width: 314px;
+  height: 34px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.event-cards-header {
+  padding: 40px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 20px;
+}
+
+.event-cards-multiple {
+  flex-direction: row;
+  display: flex;
+}
+.event-cards-title {
+  width: 365px;
+  height: 68px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+  font-size: 42px;
+}
+
+.event-cards-view-all {
+  width: 107px;
+  height: 34px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 1200px;
+  font-style: normal;
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: right;
+}
