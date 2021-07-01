@@ -1,0 +1,82 @@
+.google-button {
+  box-sizing: border-box;
+  margin-top: 40px;
+  margin-left: 400px;
+  width: 260px;
+  height: 60px;
+  background-color: var(--token-0f3acdb6-3ec8-4aad-9768-ad073303c8d7, #ffffff);
+  border-radius: 6px;
+  border: 1px solid var(--token-ee778ac9-2c92-47f7-b1ec-c1570771fb6e, #8db1bf);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: center;
+  /* {"name":"M Green"} */
+}
+.google-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  overflow: visible;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.google-text {
+  width: auto; /* 174px */
+  height: auto; /* 20px */
+  overflow: visible;
+  white-space: pre;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--D_Gray, #525252);
+  font-size: 18px;
+}
+
+.login-left-panel {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+}
+.login-left-panel-2 {
+  align-content: left;
+  flex-direction: column;
+  display: flex;
+  align-content: space-between;
+}
+.login-logo {
+  overflow: visible;
+  width: 680px;
+  height: 170px;
+  margin-top: 15%;
+}
+.login-image {
+  width: 788px;
+  height: 886px;
+}
+
+.login-page {
+  flex-direction: row;
+  display: flex;
+}
+
+.login-right-panel {
+  width: 50%;
+  background-color: #fff0e8;
+  overflow: visible;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.login-title {
+  white-space: pre;
+  font-size: 33px;
+  color: var(--D_Gray, #525252);
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+}
