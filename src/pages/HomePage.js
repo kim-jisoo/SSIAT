@@ -2,12 +2,12 @@ import NewHeaderImage from "../images/New-Header-Image.jpg";
 import ContactImage from "../images/contact.png"
 import ContactUsImage from "../images/contact-us.png"
 import ButtonCarousel from "../components/ButtonCarousel";
-import './Home.css';
+import './HomePage.css';
 import Navbar from '../components/Navbar';
 import PaddlingMan from '../videos/paddling-man.mp4';
 import EventCards from "../components/EventCards";
 import CategoryCards from "../components/CategoryCards"
-function Home() {
+function HomePage() {
     return (
       <div className="home-scroll">
         <Navbar />
@@ -75,4 +75,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default HomePage;

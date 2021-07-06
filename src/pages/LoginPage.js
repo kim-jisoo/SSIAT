@@ -2,9 +2,10 @@ import React from 'react';
 import LoginImage from '../images/login-2.png';
 import Logo from '../images/NavBarLogo.png';
 import GoogleIcon from '../images/google-icon.png';
+import Login from '../components/Login';
+import './LoginPage.css';
 
-import './Login.css';
-function Login () {
+function LoginPage () {
     return( 
         <div className="login-page">
             <div className="login-left-panel">
@@ -16,6 +17,7 @@ function Login () {
                     </button>
                     
                     <text>이메일 주소</text>
+                    <Login />
                     
                 </div>
             </div>
@@ -28,4 +30,4 @@ function Login () {
     )
 }
 
-export default Login;
+export default LoginPage;

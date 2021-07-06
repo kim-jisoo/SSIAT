@@ -1,7 +1,7 @@
 .google-button {
   box-sizing: border-box;
   margin-top: 40px;
-  margin-left: 400px;
+  margin-left: 90px;
   width: 260px;
   height: 60px;
   background-color: var(--token-0f3acdb6-3ec8-4aad-9768-ad073303c8d7, #ffffff);
@@ -35,6 +35,10 @@
   font-size: 18px;
 }
 
+.login-form {
+  
+}
+
 .login-left-panel {
   justify-content: center;
   flex-direction: column;
@@ -59,7 +63,12 @@
 }
 
 .login-page {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
   flex-direction: row;
+  caret-color: transparent;
   display: flex;
 }
 

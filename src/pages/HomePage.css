@@ -88,6 +88,7 @@
 .home-scroll {
   flex-direction: column;
   display: flex;
+  caret-color: transparent;
 }
 
 .new-header-image {
