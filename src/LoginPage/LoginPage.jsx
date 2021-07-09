@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { userActions } from '../_actions';
 import './LoginPage.css'
-import LoginImage from '../data/_images/login-2.png';
+import LoginImage from '../data/_images/login-3.png';
 import Logo from '../data/_images/NavBarLogo.png';
 import GoogleIcon from '../data/_images/google-icon.png';
 
@@ -40,7 +40,7 @@ function LoginPage() {
     }
 
     return (
-        <div class="d-md-flex col-md-8 offset-md-2 h-md-100">
+        <div class="d-md-flex col-md-10 offset-md-2 h-md-100">
             {/* left-screen*/}
             <div class="col-md-6 p-0 h-md-100">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
@@ -50,35 +50,38 @@ function LoginPage() {
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="form-group" style={{marginTop: 35}}>
                         <label className="login-input-title">이메일 주소</label>
-                        <input 
-                            placeholder="이메일 주소" 
-                            type="text" name="email" 
-                            border="rgba(0, 0, 0, 0)"
-                            value={email} onChange={handleChange} 
-                            className={'form-control' + (submitted && !email ? ' is-invalid' : '')} />
-                        {submitted && !email &&
-                            <div className="invalid-feedback">Email Address is required</div>
-                        }
+                        <div>
+                            <input 
+                                placeholder="이메일 주소" 
+                                type="text" name="email" 
+                                value={email} onChange={handleChange} 
+                                className={(submitted && !email ? ' is-invalid' : '')} />
+                                {submitted && !email &&
+                                    <div className="invalid-feedback">Email Address is required</div>
+                                }
+                        </div>
                     </div>
                     <div className="form-group">
                         <label className="login-input-title">패스워드</label>
-                        <input type="password" name="password" 
-                            placeholder='패스워드'
-                            value={password} 
-                            onChange={handleChange} 
-                            className={'form-control' + (submitted && !password ? ' is-invalid' : '')} />
+                        <div >
+                            <input 
+                                    type="password" name="password" 
+                                    placeholder='패스워드'
+                                    value={password} 
+                                    onChange={handleChange} 
+                                    className={'login-email-box' + (submitted && !password ? ' is-invalid' : '')} />
+                        </div>
+
                         {submitted && !password &&
                             <div className="invalid-feedback">Password is required</div>
                         }
                     </div>
-                    <div className="form-group">
-                        <button className="btn login-button">   
-                        { loggingIn && <span className="spinner-border spinner-border-sm mr-1"></span> }    
-                            로그인
-                        </button>
+                    
+                    <button className="btn login-button">   
+                    { loggingIn && <span className="spinner-border spinner-border-sm mr-1"></span> }    
+                        로그인
+                    </button>
 
-                        <Link to="/register" className="btn btn-link">Register</Link>
-                    </div>
 
                     <div> 
                         <text> 아직 회원이 아니신가요? </text>
@@ -95,18 +98,12 @@ function LoginPage() {
                     </button>
 
                 </form>  
-
-             
-
-                 
               
             </div>
             {/* right-screen*/}
-            <div class="col-md-6 p-0 h-md-100 loginarea">
-                <div class="p-5 justify-content-center">
-                    <img src={Logo} alt="logo" className='login-logo' />
-                    <img src={LoginImage} alt="login" className='login-image'/>
-                </div>
+            <div className="login-right-panel">
+                <img src={Logo} alt="logo" className='login-logo' />
+                <img src={LoginImage} alt="login" className='login-image'/>
             </div>
             
         </div>
