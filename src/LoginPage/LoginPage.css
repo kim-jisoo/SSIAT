@@ -73,10 +73,22 @@
   color: var(--D_Gray, #525252);
   font-size: 18px;
 }
-.login-email-box {
-  background-color: rgb(170, 170, 170);
-  color: rgb(170, 170, 170);
-  border-radius: 30;
+.input-box {
+  background-color: #aaaaaa;
+  width: 500px;
+  border-radius: 6px;
+  height: 50px;
+  border-color: #ffffff;
+  justify-content: center;
+  border: 0px;
+
+  padding-left: 10px;
+  align-content: center;
+}
+
+.input-box:focus {
+  caret-color: #333333;
+  outline: none;
 }
 .login-input-title {
   width: auto; /* 97px */
@@ -129,7 +141,7 @@
   white-space: pre;
   font-size: 33px;
   color: var(--D_Gray, #525252);
-  font-weight: 500;
+  font-weight: bold;
   margin-top: 225px;
   font-style: normal;
   font-family: 'Noto Sans KR', sans-serif;

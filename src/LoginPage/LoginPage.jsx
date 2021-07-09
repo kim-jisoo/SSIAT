@@ -40,7 +40,7 @@ function LoginPage() {
     }
 
     return (
-        <div class="d-md-flex col-md-10 offset-md-2 h-md-100">
+        <div class="d-md-flex offset-md-2 h-md-100">
             {/* left-screen*/}
             <div class="col-md-6 p-0 h-md-100">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
@@ -52,10 +52,10 @@ function LoginPage() {
                         <label className="login-input-title">이메일 주소</label>
                         <div>
                             <input 
-                                placeholder="이메일 주소" 
+                                placeholder="email address" 
                                 type="text" name="email" 
                                 value={email} onChange={handleChange} 
-                                className={(submitted && !email ? ' is-invalid' : '')} />
+                                className={'input-box' + (submitted && !email ? ' is-invalid' : '')} />
                                 {submitted && !email &&
                                     <div className="invalid-feedback">Email Address is required</div>
                                 }
@@ -63,13 +63,13 @@ function LoginPage() {
                     </div>
                     <div className="form-group">
                         <label className="login-input-title">패스워드</label>
-                        <div >
+                        <div>
                             <input 
                                     type="password" name="password" 
-                                    placeholder='패스워드'
+                                    placeholder='password'
                                     value={password} 
                                     onChange={handleChange} 
-                                    className={'login-email-box' + (submitted && !password ? ' is-invalid' : '')} />
+                                    className={'input-box' + (submitted && !password ? ' is-invalid' : '')} />
                         </div>
 
                         {submitted && !password &&
