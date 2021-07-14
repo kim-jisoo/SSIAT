@@ -18,6 +18,14 @@ module.exports = {
             {
                 test: /\.png?$/,
                 loader: 'file-loader'
+            },
+            {
+                test: /\.mp4?$/,
+                use: 'file-loader',
+            },
+            {
+                test:/\.jpg?$/,
+                use: 'file-loader',
             }
         ]
     },

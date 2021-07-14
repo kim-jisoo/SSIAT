@@ -1,0 +1,70 @@
+.entire-nav-bar {
+  padding-top: 20px;
+}
+
+.nav-arrow {
+  color: #f27980;
+  margin-left: 25px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.nav-avatar {
+  align-self: center;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.nav-bar {
+  flex-direction: row;
+  list-style-type: none;
+  overflow: visible;
+  display: flex;
+  align-content: center;
+}
+
+.nav-bar-logo {
+  width: 350px;
+  height: 85px;
+
+  overflow: visible;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 90px;
+  margin-right: 200px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.nav-links {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 200px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+  color: #525252;
+  font-size: 22px;
+  list-style-type: none;
+}
+
+.nav-links:hover {
+  color: #999999;
+}
+.nav-links:focus {
+  color: #f27980;
+}

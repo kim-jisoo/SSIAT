@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { userActions } from '../_actions';
 import './LoginPage.css'
+
 import LoginImage from '../data/_images/login-3.png';
 import Logo from '../data/_images/NavBarLogo.png';
 import GoogleIcon from '../data/_images/google-icon.png';
@@ -12,12 +13,20 @@ function LoginPage() {
         email: '',
         password: ''
     });
+
+    const [isSignedIn, setIsSignedIn] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const { email, password } = inputs;
     const loggingIn = useSelector(state => state.authentication.loggingIn);
     const dispatch = useDispatch();
     const location = useLocation();
 
+    function responseGoogle(response) {
+        console.log(response);
+        console.log(response.profileObj); 
+    }
+
+    
     // reset login status
     useEffect(() => { 
         dispatch(userActions.logout()); 
@@ -38,15 +47,11 @@ function LoginPage() {
             dispatch(userActions.login(email, password, from));
         }
     }
-
     return (
-        <div class="d-md-flex offset-md-2 h-md-100">
+        <div className="login-page">
             {/* left-screen*/}
-            <div class="col-md-6 p-0 h-md-100">
+            <div className="login-left-panel">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
-
-             
-
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="form-group" style={{marginTop: 35}}>
                         <label className="login-input-title">이메일 주소</label>
@@ -85,20 +90,29 @@ function LoginPage() {
 
                     <div> 
                         <text> 아직 회원이 아니신가요? </text>
-                        <Link to="/register" className="btn btn-link">회원 가입하기</Link>
+                        <Link to="/register" className="btn btn-link button-link">회원 가입하기</Link>
                     </div>
+
                     <div> 
                         <text> 패스워드가 기억이 안나요 </text>
                         <a  href="#"> 패스워드 찾기 </a>
                     </div>
 
-                    <button className='google-button'>
+                    <button id="google-button" className='google-button'>
                         <img src={GoogleIcon} className='google-icon' alt='google'/>
                         <text className='google-text'>구글 어카운트로 로그인</text>
                     </button>
+                    
+                    {/* <GoogleLogin
+                        clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
+                        buttonText="Login"
+                        onSuccess={this.responseGoogle}
+                        onFailure={this.responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                    /> */}
 
                 </form>  
-              
+            
             </div>
             {/* right-screen*/}
             <div className="login-right-panel">
@@ -108,6 +122,7 @@ function LoginPage() {
             
         </div>
     );
+    
 }
 
 export { LoginPage };
