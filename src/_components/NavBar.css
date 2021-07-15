@@ -1,3 +1,7 @@
+.entire-nav-bar {
+  padding-top: 20px;
+}
+
 .nav-arrow {
   color: #f27980;
   margin-left: 25px;
@@ -19,15 +23,16 @@
 }
 
 .nav-bar-logo {
-  width: 340px;
+  width: 350px;
   height: 85px;
-  padding-right: 235px;
+
   overflow: visible;
   float: left;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-left: 3%;
+  margin-left: 90px;
+  margin-right: 200px;
   list-style-type: none;
   cursor: pointer;
 }

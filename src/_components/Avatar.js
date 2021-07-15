@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import sojin from "../images/sojin.png";
+import sojin from "../data/_images/sojin.png";
 import "./Avatar.css"
 
 class Avatar extends Component {

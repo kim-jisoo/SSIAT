@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 import {HiChevronDown} from "react-icons/hi"
 import {MenuItems} from "./MenuItems";
-import NavBarLogo from "../images/NavBarLogo.png";
+import NavBarLogo from "../data/_images/NavBarLogo.png";
 import Avatar from "./Avatar"
 import './Navbar.css'
 
@@ -11,7 +11,7 @@ class NavBar extends Component {
    
     render() { 
         return(
-            <nav >
+            <nav className='entire-nav-bar'>
                 <img src={NavBarLogo} onClick={() => window.location.reload(false)} 
                  alt="NavBarLogo" className="nav-bar-logo"/>
                 <ul className="nav-bar">

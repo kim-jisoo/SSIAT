@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
-import ScrollMenu from 'react-horizontal-scrolling-menu';
 import './ButtonCarousel.css';
 import {ButtonItems} from "./ButtonItems";
-import Carousel from 'react-multi-carousel';
-import { title } from 'process';
-
 
 class ButtonCarousel extends Component {
 

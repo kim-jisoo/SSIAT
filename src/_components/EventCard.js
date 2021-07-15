@@ -3,7 +3,7 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
-import SamplePicture from "../images/rendered_15.jpg"
+import SamplePicture from "../data/_images/rendered_15.jpg"
 import './EventCard.css'
 
 //need to create image url prop for event card so we can import different photos from API
