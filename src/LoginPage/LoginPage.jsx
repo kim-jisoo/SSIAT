@@ -53,7 +53,21 @@ function LoginPage() {
             <div className="login-left-panel">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
                 <form name="form" onSubmit={handleSubmit}>
-                    <div className="form-group" style={{marginTop: 35}}>
+                    <div className="form-group" >
+
+                        <button id="google-button" className='google-button'>
+                            <img src={GoogleIcon} className='google-icon' alt='google'/>
+                            <text className='google-text'>구글 어카운트로 로그인</text>
+                        </button>
+                        
+                            
+                        {/* <GoogleLogin
+                            clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
+                            buttonText="Login"
+                            onSuccess={this.responseGoogle}
+                            onFailure={this.responseGoogle}
+                            cookiePolicy={'single_host_origin'}
+                        /> */}
                         <label className="login-input-title">이메일 주소</label>
                         <div>
                             <input 
@@ -98,18 +112,8 @@ function LoginPage() {
                         <a  href="#"> 패스워드 찾기 </a>
                     </div>
 
-                    <button id="google-button" className='google-button'>
-                        <img src={GoogleIcon} className='google-icon' alt='google'/>
-                        <text className='google-text'>구글 어카운트로 로그인</text>
-                    </button>
-                    
-                    {/* <GoogleLogin
-                        clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
-                        buttonText="Login"
-                        onSuccess={this.responseGoogle}
-                        onFailure={this.responseGoogle}
-                        cookiePolicy={'single_host_origin'}
-                    /> */}
+                   
+               
 
                 </form>  
             

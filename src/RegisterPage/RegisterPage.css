@@ -1,13 +1,14 @@
 .google-button {
   box-sizing: border-box;
   width: 280px;
-  margin-top: 40px;
+  margin-top: 30px;
   height: 60px;
   background-color: var(--token-0f3acdb6-3ec8-4aad-9768-ad073303c8d7, #ffffff);
   border-radius: 6px;
   border: 1px solid var(--token-ee778ac9-2c92-47f7-b1ec-c1570771fb6e, #8db1bf);
   align-items: center;
   display: flex;
+  margin-bottom: 40px;
   flex-direction: row;
   cursor: pointer;
   justify-content: center;
@@ -94,7 +95,7 @@
 }
 
 .sign-up-left-panel {
-  padding-right: 100px;
+  padding-right: 180px;
   margin-left: 300px;
 }
 
@@ -105,14 +106,14 @@
 }
 
 .sign-up-title {
-  margin-top: 225px;
+  margin-top: 175px;
   width: auto; /* 391px */
   height: auto; /* 39px */
   overflow: visible;
   white-space: pre;
   font-size: 33px;
   color: var(--D_Gray, #525252);
-  font-weight: 500;
+  font-weight: bold;
   font-style: normal;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -139,4 +140,50 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.sign-up-check-box {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: #f27980;
+}
+
+.register-button {
+  width: 200px;
+  color: white;
+  height: 60px;
+  background-color: #f27980;
+  border-radius: 102px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.go-back-to-login {
+  width: auto; /* 239px */
+  height: auto; /* 23px */
+
+  white-space: pre;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--Pink, #f27980);
+}
+
+.already-have-an-account {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.go-back {
+  justify-content: center;
+  display: flex;
 }

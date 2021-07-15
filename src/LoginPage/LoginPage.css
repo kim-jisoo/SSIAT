@@ -9,6 +9,7 @@
   align-items: center;
   display: flex;
   flex-direction: row;
+
   cursor: pointer;
   justify-content: center;
   /* {"name":"M Green"} */
@@ -94,7 +95,7 @@
   font-size: 33px;
   color: var(--D_Gray, #525252);
   font-weight: bold;
-  margin-top: 225px;
+  margin-top: 175px;
   font-style: normal;
   font-family: 'Noto Sans KR', sans-serif;
 }

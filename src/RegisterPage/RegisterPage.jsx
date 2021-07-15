@@ -7,6 +7,10 @@ import { userActions } from '../_actions';
 import './RegisterPage.css';
 import SignUp from '../data/_images/sign-up.png';
 
+import LoginImage from '../data/_images/login-3.png';
+import Logo from '../data/_images/NavBarLogo.png';
+import GoogleIcon from '../data/_images/google-icon.png';
+
 function RegisterPage() {
     const [user, setUser] = useState({
         firstName: '',
@@ -14,6 +18,7 @@ function RegisterPage() {
         email: '',
         password: ''
     });
+    const [isChecked, setIsChecked] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const registering = useSelector(state => state.registration.registering);
     const dispatch = useDispatch();
@@ -28,11 +33,15 @@ function RegisterPage() {
         setUser(user => ({ ...user, [name]: value }));
     }
 
+    function handleIsChecked() {
+        setIsChecked(true);
+    }
+
     function handleSubmit(e) {
         e.preventDefault();
 
         setSubmitted(true);
-        if (user.firstName && user.lastName && user.email && user.password) {
+        if (user.firstName && user.lastName && user.email && user.password && isChecked) {
             dispatch(userActions.register(user));
         }
     }
@@ -41,6 +50,12 @@ function RegisterPage() {
         <div className="sign-up-page">
             <div className="sign-up-left-panel">
                 <h2 className="sign-up-title">씨앗 커뮤니티에 가입하세요!</h2>
+
+                <button id="google-button" className='google-button'>
+                    <img src={GoogleIcon} className='google-icon' alt='google'/>
+                    <text className='google-text'>구글 어카운트로 로그인</text>
+                </button>
+
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="sign-up-names">
                         <div className="sign-up-name">
@@ -75,7 +90,7 @@ function RegisterPage() {
                     <div className="form-group">
                         <label className="sign-up-subtitles">이메일 주소</label>
                         <input 
-                        type="text" 
+                        type="email" 
                         name="email" 
                         value={user.email} 
                         onChange={handleChange} 
@@ -98,13 +113,29 @@ function RegisterPage() {
                             <div className="invalid-feedback">Password is required</div>
                         }
                     </div>
-                    <div className="form-group">
-                        <button className="btn btn-primary">
-                            {registering && <span className="spinner-border spinner-border-sm mr-1"></span>}
-                            Register
-                        </button>
-                        <Link to="/login" className="btn btn-link">Cancel</Link>
+
+                    <div>
+                        <input className={'sign-up-check-box' + (submitted && !isChecked ? ' is-invalid' : '')} 
+                        type="checkbox" id="terms"
+                        onChange={handleIsChecked}
+                        />
+                        이용약관과 개인정보처리방침에 동의합니다.
+                        {submitted && !isChecked &&
+                                <div className="invalid-feedback">Please agree to our Terms and Conditions & Private Policy</div>
+                        }
                     </div>
+
+                    <div className="form-group go-back">
+                        <button className="btn register-button">
+                            {registering && <span className=""></span>}
+                            가입하기
+                        </button>
+                        <text className="already-have-an-account">
+                            회원이신가요?
+                            <Link to="/login" className="btn btn-link go-back-to-login">로그인 하기</Link>
+                        </text>
+                    </div>
+
                 </form>
             </div>
 
@@ -112,7 +143,6 @@ function RegisterPage() {
                 <img src={SignUp} alt="signup image" className='sign-up-image' />
             </div>
 
-            <div className="clear"></div>
         </div>
     );
 }
