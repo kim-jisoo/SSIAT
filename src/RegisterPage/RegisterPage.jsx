@@ -7,8 +7,6 @@ import { userActions } from '../_actions';
 import './RegisterPage.css';
 import SignUp from '../data/_images/sign-up.png';
 
-import LoginImage from '../data/_images/login-3.png';
-import Logo from '../data/_images/NavBarLogo.png';
 import GoogleIcon from '../data/_images/google-icon.png';
 
 function RegisterPage() {
@@ -57,8 +55,8 @@ function RegisterPage() {
                 </button>
 
                 <form name="form" onSubmit={handleSubmit}>
-                    <div className="sign-up-names">
-                        <div className="sign-up-name">
+                    <div className="sign-up-first-last">
+                        <div className="sign-up-last">
                                 <label className="sign-up-subtitles">성 (Last Name)</label>
                                 <input 
                                     type="text" 
@@ -87,7 +85,7 @@ function RegisterPage() {
                         </div>
                     </div>
 
-                    <div className="form-group">
+                    <div className="sign-up-name">
                         <label className="sign-up-subtitles">이메일 주소</label>
                         <input 
                         type="email" 
@@ -100,7 +98,7 @@ function RegisterPage() {
                             <div className="invalid-feedback">Email is required</div>
                         }
                     </div>
-                    <div className="form-group">
+                    <div className="sign-up-name">
                         <label className="sign-up-subtitles">패스워드</label>
                         <input 
                         type="password" 
@@ -125,9 +123,9 @@ function RegisterPage() {
                         }
                     </div>
 
-                    <div className="form-group go-back">
+                    <div className="form-group ">
                         <button className="btn register-button">
-                            {registering && <span className=""></span>}
+                            {registering && <span></span>}
                             가입하기
                         </button>
                         <text className="already-have-an-account">

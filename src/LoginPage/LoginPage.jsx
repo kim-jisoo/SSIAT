@@ -14,7 +14,6 @@ function LoginPage() {
         password: ''
     });
 
-    const [isSignedIn, setIsSignedIn] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const { email, password } = inputs;
     const loggingIn = useSelector(state => state.authentication.loggingIn);
@@ -72,7 +71,7 @@ function LoginPage() {
                         <div>
                             <input 
                                 placeholder="email address" 
-                                type="text" name="email" 
+                                type="email" name="email" 
                                 value={email} onChange={handleChange} 
                                 className={'input-box' + (submitted && !email ? ' is-invalid' : '')} />
                                 {submitted && !email &&
