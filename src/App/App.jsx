@@ -8,8 +8,8 @@ import { PrivateRoute } from '../_components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
-import {QuestionPage } from '../QuestionPage';
-
+import {QuestionPage1 } from '../QuestionPage1';
+import {QuestionPage2 } from '../QuestionPage2';
 function App({component: Component, authed, ...rest}) {
     const alert = useSelector(state => state.alert);
     const dispatch = useDispatch();
@@ -33,7 +33,8 @@ function App({component: Component, authed, ...rest}) {
                             <PrivateRoute exact path="/" component={HomePage} />
                             <Route path="/login" component={LoginPage} />
                             <Route path="/register" component={RegisterPage} />
-                            <Route path="/question" component={QuestionPage} />
+                            <Route path="/question-1" component={QuestionPage1} />
+                            <Route path="/question-2" component={QuestionPage2} />
                             <Redirect from="*" to="/" />
                         </Switch>
                     </Router>

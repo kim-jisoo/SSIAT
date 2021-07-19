@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './QuestionPage.css';
 import Logo from '../data/_images/NavBarLogo.png';
 
-function QuestionPage() {
+function QuestionPage1() {
     return (
         <div className="question-margin">
             <div className="container">
@@ -68,4 +68,4 @@ function QuestionPage() {
     )
 }
 
-export { QuestionPage };
+export { QuestionPage1 };
