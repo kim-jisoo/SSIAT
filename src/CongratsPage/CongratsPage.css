@@ -1,0 +1,17 @@
+.congrats-container {
+  background: #fff0e8;
+  width: 100%;
+  height: 935px;
+  position: relative;
+}
+.congrats-banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.congrats-title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
