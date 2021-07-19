@@ -1,0 +1,132 @@
+.container {
+  background-color: var(--token-c6a409f7-f848-469d-8d9f-318cdc9572a3, #fff0e8);
+  display: flex;
+  background: #fff0e8;
+  flex-direction: column;
+  margin-left: 30%;
+  width: 100%;
+}
+.question-margin {
+  width: 100%;
+  height: 935px;
+  background-color: var(--token-c6a409f7-f848-469d-8d9f-318cdc9572a3, #fff0e8);
+}
+.logo {
+  width: 32%;
+  height: 20%;
+  margin-top: 7%;
+  margin-left: 16%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-group-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-group-2 {
+  margin-left: 25px;
+  justify-content: space-between;
+}
+
+.arrow-button {
+  width: 131px;
+  height: 41px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  color: var(--Pink, #f27980);
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 35%;
+}
+
+.arrow-button:hover {
+  text-decoration: none;
+  color: #f27980;
+}
+
+.question-title {
+  margin-top: 40px;
+  width: 800px;
+  height: 102px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: var(--D_Gray, #525252);
+}
+
+.question-subtitle {
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--D_Gray, #525252);
+  font-size: 24px;
+}
+
+.question-input-box {
+  border-radius: 8px;
+  border-color: #f27980;
+  height: 50px;
+  width: 500px;
+  padding-left: 15px;
+  font-size: 20px;
+  border-style: solid;
+}
+
+.question-input-box:focus {
+  outline: none;
+  caret-color: #333333;
+}
+
+.question-date-of-birth {
+  border-radius: 8px;
+  border-color: #f27980;
+  height: 50px;
+  width: 300px;
+  padding-left: 15px;
+  font-size: 20px;
+  border-style: solid;
+  color: #aaaaaa;
+}
+
+.question-date-of-birth:focus {
+  outline: none;
+  caret-color: #333333;
+}
+
+.question-gender {
+  margin-left: 10px;
+}
+
+.question-gender-female {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.question-gender-male {
+  margin-right: 10px;
+  border-color: #f27980;
+}
+
+.question-form {
+  margin-left: 11%;
+}

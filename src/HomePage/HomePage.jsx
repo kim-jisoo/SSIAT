@@ -71,9 +71,9 @@ function HomePage() {
                 <div>
                     <img src={ContactUsImage} alt="contact-us" className="contact-us-image"/>
                     <button className="contact-button">
-                    <text className="contact-button-text">
-                    문의하기
-                    </text>
+                        <text className="contact-button-text">
+                        문의하기
+                        </text>
                     </button>
                 </div>
                 <img src={ContactImage} alt="contact" className="contact-image"></img>

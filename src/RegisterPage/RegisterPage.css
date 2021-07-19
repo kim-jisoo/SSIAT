@@ -78,7 +78,6 @@
   width: 100%;
   background-color: #ffffff;
   flex-direction: row;
-  caret-color: transparent;
   display: flex;
 }
 
@@ -95,7 +94,7 @@
 .sign-up-right-panel {
   background-color: #fff0e8;
   padding-left: 3%;
-  width: 50%
+  width: 50%;
 }
 
 .sign-up-title {
@@ -181,6 +180,5 @@
 }
 
 .sign-up-image {
-  width: 100%; 
+  width: 100%;
 }
-
