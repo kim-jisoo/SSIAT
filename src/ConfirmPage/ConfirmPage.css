@@ -1,0 +1,111 @@
+.confirm-page {
+  width: 100%;
+  background-color: #ffffff;
+  flex-direction: row;
+  display: flex;
+}
+
+.confirm-left-panel {
+  padding: 7% 7%;
+  width: 50%;
+}
+
+.confirm-right-panel {
+  background-color: #fff0e8;
+  padding-left: 3%;
+  width: 50%;
+}
+.confirm-title {
+  width: auto; /* 303px */
+  height: auto; /* 39px */
+  overflow: visible;
+  white-space: pre;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 33px;
+  color: var(--D_Gray, #525252);
+  margin-top: 20%;
+}
+.confirm-subtitles {
+  width: auto; /* 135px */
+  height: auto; /* 23px */
+  overflow: visible;
+  white-space: pre;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  color: var(--D_Gray, #525252);
+}
+
+.confirm-image {
+  width: 100%;
+}
+
+.confirm-text-area-1 {
+  height: auto; /* 60px */
+  width: 636px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.9;
+}
+
+.confirm-text-area-2 {
+  height: auto; /* 60px */
+  width: 636px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.9;
+  margin-top: 30%;
+}
+
+.confirm-text-group-1 {
+  margin-top: 5%;
+}
+.confirm-text-group-2 {
+  margin-top: 8%;
+}
+
+.confirm-button {
+  width: 200px;
+  color: white;
+  height: 60px;
+  background-color: #f27980;
+  border-radius: 102px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
+.confirm-button-2 {
+  width: 200px;
+  color: white;
+  height: 60px;
+  background-color: #f27980;
+  border-radius: 102px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 25%;
+}
+
+.confirm-login-button {
+  color: white;
+  text-decoration: none;
+}
+.confirm-login-button:hover {
+  color: black;
+  text-decoration: none;
+}
