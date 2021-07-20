@@ -34,9 +34,7 @@
   justify-content: space-between;
 }
 
-.arrow-button {
-  width: 131px;
-  height: 41px;
+.question-1-arrow-button {
   overflow: hidden;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -50,7 +48,7 @@
   margin-left: 35%;
 }
 
-.arrow-button:hover {
+.question-1-arrow-button:hover {
   text-decoration: none;
   color: #f27980;
 }

@@ -8,6 +8,7 @@ import './RegisterPage.css';
 import SignUp from '../data/_images/sign-up.png';
 
 import GoogleIcon from '../data/_images/google-icon.png';
+import GoogleLogin from 'react-google-login';
 
 function RegisterPage() {
     const [user, setUser] = useState({
@@ -26,6 +27,12 @@ function RegisterPage() {
         dispatch(userActions.logout());
     }, []);
 
+    
+    function responseGoogle(response) {
+        console.log(response);
+        console.log(response.profileObj); 
+    }
+    
     function handleChange(e) {
         const { name, value } = e.target;
         setUser(user => ({ ...user, [name]: value }));
@@ -49,10 +56,19 @@ function RegisterPage() {
             <div className="sign-up-left-panel">
                 <h2 className="sign-up-title">씨앗 커뮤니티에 가입하세요!</h2>
 
-                <button id="google-button" className='google-button'>
-                    <img src={GoogleIcon} className='google-icon' alt='google'/>
-                    <text className='google-text'>구글 어카운트로 로그인</text>
-                </button>
+                <GoogleLogin
+                    clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
+                    buttonText="Login"
+                    render={renderProps => (
+                        <button onClick={renderProps.onClick} className='google-button'>
+                            <img src={GoogleIcon} className='google-icon' alt='google'/>
+                            <text className='google-text'>구글 어카운트로 로그인</text>
+                        </button>
+                    )}
+                    onSuccess={responseGoogle}
+                    onFailure={responseGoogle}
+                    cookiePolicy={'single_host_origin'}
+                />
 
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="sign-up-first-last">

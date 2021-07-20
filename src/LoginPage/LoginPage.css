@@ -9,10 +9,13 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-
+  outline: none;
   cursor: pointer;
   justify-content: center;
   /* {"name":"M Green"} */
+}
+.google-button:focus {
+  outline: none;
 }
 .google-icon {
   width: 40px;

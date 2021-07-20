@@ -7,7 +7,7 @@ import './LoginPage.css'
 import LoginImage from '../data/_images/login-3.png';
 import Logo from '../data/_images/NavBarLogo.png';
 import GoogleIcon from '../data/_images/google-icon.png';
-
+import GoogleLogin from 'react-google-login';
 function LoginPage() {
     const [inputs, setInputs] = useState({
         email: '',
@@ -52,22 +52,21 @@ function LoginPage() {
             {/* left-screen*/}
             <div className="login-left-panel">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
-                <form name="form" onSubmit={handleSubmit}>
-                    <div className="form-group" >
-
-                        <button id="google-button" className='google-button'>
+                <GoogleLogin
+                    clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
+                    buttonText="Login"
+                    render={renderProps => (
+                        <button onClick={renderProps.onClick} className='google-button'>
                             <img src={GoogleIcon} className='google-icon' alt='google'/>
                             <text className='google-text'>구글 어카운트로 로그인</text>
                         </button>
-                        
-                            
-                        {/* <GoogleLogin
-                            clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
-                            buttonText="Login"
-                            onSuccess={this.responseGoogle}
-                            onFailure={this.responseGoogle}
-                            cookiePolicy={'single_host_origin'}
-                        /> */}
+                    )}
+                    onSuccess={responseGoogle}
+                    onFailure={responseGoogle}
+                    cookiePolicy={'single_host_origin'}
+                />
+                <form name="form" onSubmit={handleSubmit}>
+                    <div className="form-group" >
                         <label className="login-input-title">이메일 주소</label>
                         <div>
                             <input 

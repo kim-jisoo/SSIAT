@@ -11,7 +11,7 @@ export const MenuItems = [
     },
     {
         title: '문의하기',
-        url: '#',
+        url: '/',
         cName: 'nav-links'
     },
     {
@@ -21,7 +21,7 @@ export const MenuItems = [
     },
     {
         title: '로그아웃',
-        url: '#',
+        url: '/login',
         cName: 'nav-links'
     },
     
