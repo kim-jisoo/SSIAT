@@ -8,6 +8,8 @@ import LoginImage from '../data/_images/login-3.png';
 import Logo from '../data/_images/NavBarLogo.png';
 import GoogleIcon from '../data/_images/google-icon.png';
 import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
+
 function LoginPage() {
     const [inputs, setInputs] = useState({
         email: '',
@@ -47,6 +49,10 @@ function LoginPage() {
         }
     }
     
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+    });
+
     return (
         <div className="login-page">
             {/* left-screen*/}
@@ -65,6 +71,8 @@ function LoginPage() {
                     onFailure={responseGoogle}
                     cookiePolicy={'single_host_origin'}
                 />
+
+                
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="form-group" >
                         <label className="login-input-title">이메일 주소</label>
