@@ -1,10 +1,12 @@
 # Facebook OAuth Login
 Directions to implement Facebook Login authentications.
 
-## Developer Application
-Create a facebook application platform through [Facebook Developer Site](https://developers.facebook.com/).
+### Developer Application
+Create a facebook application platform through [Facebook Developer Site](https://developers.facebook.com/). \
+Ensure default App Mode is set to "Development".\
+Launching requires switching App Mode to "Live".
 
-## Private Policy URL
+### Private Policy URL
 Create a Private Policy URL to obtain Facebook Developer App ID \
 We can use a [Private Policy URL Generator](https://www.privacypolicies.com/) to obtain a URL.
 
