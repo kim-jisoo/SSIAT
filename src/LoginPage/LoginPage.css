@@ -12,6 +12,7 @@
   outline: none;
   cursor: pointer;
   justify-content: center;
+  margin-right: 30px;
   /* {"name":"M Green"} */
 }
 .google-button:focus {
@@ -123,4 +124,9 @@
   overflow: visible;
   margin-left: 13%;
   width: 70%;
+}
+
+.login-oauth-group {
+  display: flex;
+  flex-direction: row;
 }
