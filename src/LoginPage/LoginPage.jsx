@@ -7,7 +7,12 @@ import './LoginPage.css'
 import LoginImage from '../data/_images/login-3.png';
 import Logo from '../data/_images/NavBarLogo.png';
 import GoogleIcon from '../data/_images/google-icon.png';
+import FacebookIcon from '../data/_images/facebook.png';
+
 import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
 function LoginPage() {
     const [inputs, setInputs] = useState({
         email: '',
@@ -33,6 +38,20 @@ function LoginPage() {
         console.log(response.profileObj); 
     }
 
+    function responseFacebook(response) {
+        console.log(response);
+    }
+
+    // to obtain facebook API's 
+    // responseFacebook = response => {
+
+    //     this.setState ({
+    //         userId: response.userID,
+    //         name: response.name,
+    //         email: response.email,
+    //         picture: response.picture,
+    //     });
+    // }
     
     // reset login status
     useEffect(() => { 
@@ -55,28 +74,41 @@ function LoginPage() {
         }
     }
     
+  
+
     return (
         <div className="login-page">
             {/* left-screen*/}
             <div className="login-left-panel">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
+                <div className="login-oauth-group">
+                    <GoogleLogin
+                        clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
+                        buttonText="Login"
+                        render={renderProps => (
+                            <button onClick={renderProps.onClick} className='google-button'>
+                                <img src={GoogleIcon} className='google-icon' alt='google'/>
+                                <text className='google-text'>구글 어카운트로 로그인</text>
+                            </button>
+                        )}
+                        onSuccess={responseGoogle}
+                        onFailure={responseGoogle}
+                        cookiePolicy={'single_host_origin'}
+                    />
 
-                <GoogleLogin
-                    clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
-                    buttonText="Login"
-                    render={renderProps => (
-                        <button onClick={renderProps.onClick} className='google-button'>
-                            <img src={GoogleIcon} className='google-icon' alt='google'/>
-                            <text className='google-text'>구글 어카운트로 로그인</text>
-                        </button>
-                    )}
-                    redirectUri="/"
-                    isSignedIn={true}
-                    onSuccess={responseGoogle}
-                    onFailure={responseGoogle}
-                    cookiePolicy={'single_host_origin'}
-                />
-
+                    <FacebookLogin
+                        appId="952434698665843"
+                        autoLoad={true}
+                        render={renderProps => (
+                            <button onClick={renderProps.onClick} className='google-button'>
+                                <img src={FacebookIcon} className='google-icon' alt='google'/>
+                                <text className='google-text'>페이스북으로 가입하기</text>
+                            </button>
+                        )}
+                        callback={responseFacebook} 
+                    />
+                </div>
+                
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="form-group" >
                         <label className="login-input-title">이메일 주소</label>

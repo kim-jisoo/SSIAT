@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Facebook OAuth Login
+Directions to implement Facebook Login authentications.
+
+### Developer Application
+Create a facebook application platform through [Facebook Developer Site](https://developers.facebook.com/). \
+Ensure default App Mode is set to "Development".\
+Launching requires switching App Mode to "Live".
+
+### Private Policy URL
+Create a Private Policy URL to obtain Facebook Developer App ID \
+We can use a [Private Policy URL Generator](https://www.privacypolicies.com/) to obtain a URL.
+
+# Getting Started with SSIAT React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,7 +21,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -68,3 +80,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
