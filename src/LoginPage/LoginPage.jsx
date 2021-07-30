@@ -19,8 +19,16 @@ function LoginPage() {
     const loggingIn = useSelector(state => state.authentication.loggingIn);
     const dispatch = useDispatch();
     const location = useLocation();
+    
+    const [name, setName] = useState("");
+    const [googleEmail, setGoogleEmail] = useState("");
+
 
     function responseGoogle(response) {
+        setName(response.profileObj.name);
+        setGoogleEmail(response.profileObj.googleEmail);
+        const { from } = location.state || { from: { pathname: "/" } };
+        dispatch(userActions.login(googleEmail, password, from));
         console.log(response);
         console.log(response.profileObj); 
     }
@@ -52,6 +60,7 @@ function LoginPage() {
             {/* left-screen*/}
             <div className="login-left-panel">
                 <h2 className='login-title'>씨앗 커뮤니티에 오신 것을 환영합니다!</h2>
+
                 <GoogleLogin
                     clientId="95964570519-cl08olhuejqb1ouvftprassoatdjkkp7.apps.googleusercontent.com"
                     buttonText="Login"
@@ -61,10 +70,13 @@ function LoginPage() {
                             <text className='google-text'>구글 어카운트로 로그인</text>
                         </button>
                     )}
+                    redirectUri="/"
+                    isSignedIn={true}
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle}
                     cookiePolicy={'single_host_origin'}
                 />
+
                 <form name="form" onSubmit={handleSubmit}>
                     <div className="form-group" >
                         <label className="login-input-title">이메일 주소</label>
