@@ -16,19 +16,7 @@
   letter-spacing: 0px;
   line-height: 1.8;
 }
-.group-body-2 {
-  overflow: hidden;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #f27980;
-  font-size: 24px;
-  letter-spacing: 0px;
-  line-height: 1.8;
-}
+
 .group-card-1 {
   width: 40%;
   margin-top: 5%;
@@ -40,9 +28,20 @@
   padding-right: 2%;
   padding-left: 2%;
   padding-bottom: 3%;
-  width: 40%;
+  width: 100%;
   flex-direction: column;
   display: flex;
+}
+.group-col-1 {
+  flex-direction: column;
+  display: flex;
+}
+.group-div-1 {
+  flex-direction: column;
+  display: flex;
+  margin-left: 6%;
+  margin-top: 5%;
+  padding-right: 9%;
 }
 .group-form-1 {
   display: flex;
@@ -90,9 +89,9 @@
   flex-direction: column;
 }
 .group-form-9 {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
-  justify-content: space-between;
+  margin-left: 11%;
 }
 .group-info-1 {
   display: flex;
@@ -123,6 +122,35 @@
   text-decoration: none;
   color: var(--Pink, #f27980);
 }
+.group-row-1 {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-left: 5%;
+}
+.group-row-2 {
+  flex-direction: row;
+  display: flex;
+}
+.group-row-3 {
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 3%;
+}
+.group-row-4 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.group-row-5 {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+}
+.group-photo {
+  margin: 3%;
+}
 
 .group-scroll {
   display: flex;
@@ -149,12 +177,28 @@
   letter-spacing: 0px;
   line-height: 1.2;
 }
-
+.group-subtitle-2 {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #f27980;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 1.8;
+  position: absolute;
+  margin-left: 38%;
+}
+.group-subtitle-3 {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #f27980;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 1.8;
+  margin-top: 1%;
+}
 .group-title-1 {
-  overflow: hidden;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
   margin-top: 1%;
   font-weight: 400;
   font-style: normal;
@@ -179,18 +223,26 @@
   text-align: left;
 }
 .group-title-3 {
-  overflow: hidden;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
+  width: 300px;
   margin-top: 1%;
   font-weight: 400;
   font-style: normal;
   font-family: 'Noto Sans KR', sans-serif;
   color: var(--D_Gray, #525252);
   font-size: 40px;
-  letter-spacing: 0px;
   line-height: 1.2;
+  margin-left: 3%;
+}
+.group-title-4 {
+  margin-top: 1%;
+  width: 300px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--D_Gray, #525252);
+  font-size: 40px;
+
+  margin-bottom: 3%;
 }
 .group-user-data-1 {
   width: 81px;

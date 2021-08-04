@@ -8,6 +8,10 @@ import Button from '../_components/Button';
 import Block from '../_components/Block';
 import Sojin from '../_components/Avatar';
 import Avatar from '../_components/Avatar';
+import MeetingCard from '../_components/MeetingCard';
+import StockPhoto from '../data/_images/stock-image.jpg';
+import MemberCard from '../_components/MemberCard';
+import Review from '../_components/Review';
 
 function GroupPage() {
     return(
@@ -112,15 +116,133 @@ function GroupPage() {
                 </div>
             </div>
 
-            <div className="group-form-4">
+            <div className="group-row-1">
                 <div>
-                    <h5 className="group-title-1"> 예정된 모임</h5>
+                    <h5 className="group-title-4"> 예정된 모임</h5>
+                    <MeetingCard 
+                        time="2021년 5월 16일 (토) 11 AM PDT"
+                        location="Great Park, Irvine, CA 92618"
+                        likes="5월 정기모임과 공원청소"
+                        members="7명"
+                    />
+                     <MeetingCard 
+                        time="2021년 5월 16일 (토) 11 AM PDT"
+                        location="Great Park, Irvine, CA 92618"
+                        likes="5월 정기모임과 공원청소"
+                        members="7명"
+                    />
+                     <MeetingCard 
+                        time="2021년 5월 16일 (토) 11 AM PDT"
+                        location="Great Park, Irvine, CA 92618"
+                        likes="5월 정기모임과 공원청소"
+                        members="7명"
+                    />
+                    
                 </div>
-                <div>
-                    <div className="group-form-9">
+                <div className="group-form-9">
+                    <div className="group-row-2">
                         <h5 className="group-title-3">사진 갤러리</h5>
-                        <h6 className="group-body-2"> 모두 보기</h6>
-                    </div>
+                        <a href="#" className="group-subtitle-2"> 모두 보기</a>  
+                    </div>  
+                    <div className="group-col-1">
+                        <div className="group-row-3">
+                            <img className="group-photo" src={StockPhoto} width="250"/>
+                            <img className="group-photo" src={StockPhoto} width="250"/>
+                            <img className="group-photo" src={StockPhoto} width="250"/>
+                        </div>
+                        <div className="group-row-3">
+                            <img className="group-photo" src={StockPhoto} width="250"/>
+                            <img className="group-photo" src={StockPhoto} width="250"/>
+                            <img className="group-photo" src={StockPhoto} width="250"/>
+                        </div>
+                    </div>   
+                </div>
+
+                
+            </div>
+            <div className="group-form-9">
+                <h5 className="group-title-4">사진 갤러리</h5>
+                <MemberCard 
+                    name="김아무개" 
+                    text="지난 모임에서 돗자리를 공원에 두고 왔는데 혹시 
+                        보신 분 계세요? 핑크색 비닐소재 입니다. 보신 분은 저한테 
+                        메세지보내주세요."
+                />
+                <MemberCard 
+                    name="김아무개" 
+                    text="지난 모임에서 돗자리를 공원에 두고 왔는데 혹시 
+                        보신 분 계세요? 핑크색 비닐소재 입니다. 보신 분은 저한테 
+                        메세지보내주세요."
+                />
+                <MemberCard 
+                    name="김아무개" 
+                    text="지난 모임에서 돗자리를 공원에 두고 왔는데 혹시 
+                        보신 분 계세요? 핑크색 비닐소재 입니다. 보신 분은 저한테 
+                        메세지보내주세요."
+                />
+                    <MemberCard 
+                    name="김아무개" 
+                    text="지난 모임에서 돗자리를 공원에 두고 왔는데 혹시 
+                        보신 분 계세요? 핑크색 비닐소재 입니다. 보신 분은 저한테 
+                        메세지보내주세요."
+                />
+                    <MemberCard 
+                    name="김아무개" 
+                    text="지난 모임에서 돗자리를 공원에 두고 왔는데 혹시 
+                        보신 분 계세요? 핑크색 비닐소재 입니다. 보신 분은 저한테 
+                        메세지보내주세요."
+                />
+                <a href="#" className="group-subtitle-3">모두 보기</a>
+            </div>
+
+            <div className="group-div-1">
+                <div className="group-row-4">
+                    <h6 className="group-title-1"> 멤버 리뷰 </h6>
+                    <a href="#" className="group-subtitle-3">모두 보기</a>
+                </div>
+                <div className="group-row-5">
+                    <Review 
+                        name="이아무개" 
+                        body="평소 원예에 관심이 많았지만 
+                        직장생활과 육아로 엄두를 못내고 있었어요. 지인으로 부터 씨앗
+                        커뮤니티에 오렌지 카운티 원예그룹이 있다는 얘기를 듣고 용기내어 
+                        가입하고 지난 3개월 동안 모임에 참석을 하고 있어요. 멤버들이 
+                        취미생활 뿐 아니라 서로를 챙기고 공원 환경미화와 양로원에 화분을 
+                        도네이션하는 등 봉사활동에 적극인 모습에큰 감동을 받고 저 또한 
+                        참여하면서 보람을 느끼고 있습니다. 적극 추천합니다!"
+                    />
+                    <Review
+                        name="이아무개" 
+                        body="평소 원예에 관심이 많았지만 
+                        직장생활과 육아로 엄두를 못내고 있었어요. 지인으로 부터 씨앗
+                        커뮤니티에 오렌지 카운티 원예그룹이 있다는 얘기를 듣고 용기내어 
+                        가입하고 지난 3개월 동안 모임에 참석을 하고 있어요. 멤버들이 
+                        취미생활 뿐 아니라 서로를 챙기고 공원 환경미화와 양로원에 화분을 
+                        도네이션하는 등 봉사활동에 적극인 모습에큰 감동을 받고 저 또한 
+                        참여하면서 보람을 느끼고 있습니다. 적극 추천합니다!"
+                    />
+                </div>
+                <div className="group-row-5">
+                    <Review
+                        name="이아무개" 
+                        body="평소 원예에 관심이 많았지만 
+                        직장생활과 육아로 엄두를 못내고 있었어요. 지인으로 부터 씨앗
+                        커뮤니티에 오렌지 카운티 원예그룹이 있다는 얘기를 듣고 용기내어 
+                        가입하고 지난 3개월 동안 모임에 참석을 하고 있어요. 멤버들이 
+                        취미생활 뿐 아니라 서로를 챙기고 공원 환경미화와 양로원에 화분을 
+                        도네이션하는 등 봉사활동에 적극인 모습에큰 감동을 받고 저 또한 
+                        참여하면서 보람을 느끼고 있습니다. 적극 추천합니다!"
+                    />
+                    <Review
+                        name="이아무개" 
+                        body="평소 원예에 관심이 많았지만 
+                        직장생활과 육아로 엄두를 못내고 있었어요. 지인으로 부터 씨앗
+                        커뮤니티에 오렌지 카운티 원예그룹이 있다는 얘기를 듣고 용기내어 
+                        가입하고 지난 3개월 동안 모임에 참석을 하고 있어요. 멤버들이 
+                        취미생활 뿐 아니라 서로를 챙기고 공원 환경미화와 양로원에 화분을 
+                        도네이션하는 등 봉사활동에 적극인 모습에큰 감동을 받고 저 또한 
+                        참여하면서 보람을 느끼고 있습니다. 적극 추천합니다!"
+                    />
                 </div>
             </div>
         </div>

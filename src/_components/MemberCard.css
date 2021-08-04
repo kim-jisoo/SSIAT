@@ -1,0 +1,38 @@
+.member-avatar {
+  width: 8%;
+  border-radius: 100px;
+}
+.member-text {
+  margin-top: 2%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+}
+.member-container {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: var(--token-0f3acdb6-3ec8-4aad-9768-ad073303c8d7, #ffffff);
+  border-radius: 10px;
+  border: 1px solid var(--token-771a0f82-c119-4c43-bfac-b5a7d11bd7a2, #6982a9)
+    /* {"name":"M Blue"} */;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 3%;
+  margin-bottom: 1%;
+}
+.member-name {
+  width: 25%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #000000;
+  font-size: 30px;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+.member-row-1 {
+  display: flex;
+  flex-direction: row;
+}
