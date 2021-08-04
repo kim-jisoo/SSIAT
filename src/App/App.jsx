@@ -12,6 +12,7 @@ import {QuestionPage1 } from '../QuestionPage1';
 import {QuestionPage2 } from '../QuestionPage2';
 import {CongratsPage} from '../CongratsPage';
 import {ConfirmPage} from '../ConfirmPage';
+import {GroupPage} from '../GroupPage';
 
 function App({component: Component, authed, ...rest}) {
     const alert = useSelector(state => state.alert);
@@ -40,6 +41,7 @@ function App({component: Component, authed, ...rest}) {
                             <Route path="/question-2" component={QuestionPage2} />
                             <Route path="/congrats" component={CongratsPage} />
                             <Route path="/confirm" component={ConfirmPage} />
+                            <Route path="/group" component={GroupPage} />
                             <Redirect from="*" to="/" />
                         </Switch>
                     </Router>

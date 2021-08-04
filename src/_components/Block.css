@@ -1,0 +1,40 @@
+.block-title {
+  width: 242px;
+  height: 56px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.block-group-1 {
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 20%;
+  height: 30%;
+  overflow: visible;
+  border-radius: 10px;
+  border: 1px solid var(--token-9db73c8f-0ad4-49ce-b41a-6e1526dbda5f, #5d7c95);
+}
+
+.block-value {
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 60px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  text-align: right;
+  margin-right: 5%;
+}

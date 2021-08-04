@@ -14,7 +14,6 @@ import NavBar from '../_components/NavBar';
 import EventCards from '../_components/EventCards';
 import CategoryCards from '../_components/CategoryCards';
 import './HomePage.css';
-import { Nav } from 'reactstrap';
 
 function HomePage() {
     const users = useSelector(state => state.users);

@@ -11,8 +11,6 @@ import FacebookIcon from '../data/_images/facebook.png';
 
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
 function LoginPage() {
     const [inputs, setInputs] = useState({
         email: '',

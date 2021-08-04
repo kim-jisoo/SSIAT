@@ -1,0 +1,21 @@
+.btn-1 {
+  width: 200px;
+  color: white;
+  height: 60px;
+  background-color: #f27980;
+  border-radius: 90px;
+  cursor: pointer;
+  border: 0;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  outline: none;
+  color: #ffffff;
+}
+.btn-1:hover {
+  color: var(--D_Gray, #525252);
+  outline: none;
+}
+.btn-1:focus {
+  outline: none;
+}
