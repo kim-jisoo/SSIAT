@@ -68,3 +68,7 @@
 .nav-links:focus {
   color: #f27980;
 }
+
+.nav-drop-down {
+  background: transparent;
+}

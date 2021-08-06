@@ -4,7 +4,7 @@ import "./Avatar.css"
 
 function Avatar(props) {
     return (
-        <img alt="sojin"  
+        <img alt="profileIcon"  
             src={sojin} 
             className={ (props.styleName ? props.styleName : "avatar-bubble")}
         /> 
