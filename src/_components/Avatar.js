@@ -2,15 +2,13 @@ import React, {Component} from 'react';
 import sojin from "../data/_images/sojin.png";
 import "./Avatar.css"
 
-class Avatar extends Component {
-    render () {
-        return (
-            <img alt="sojin"  
-                src={sojin} 
-                className="avatar-bubble"
-            /> 
-        )
-    }
+function Avatar(props) {
+    return (
+        <img alt="profileIcon"  
+            src={sojin} 
+            className={ (props.styleName ? props.styleName : "avatar-bubble")}
+        /> 
+    )
 }
 
 export default Avatar;
