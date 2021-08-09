@@ -10,6 +10,7 @@ import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
 import {QuestionPage1 } from '../QuestionPage1';
 import {QuestionPage2 } from '../QuestionPage2';
+import {QuestionPage3} from '../QuestionPage3';
 import {CongratsPage} from '../CongratsPage';
 import {ConfirmPage} from '../ConfirmPage';
 import {GroupPage} from '../GroupPage';
@@ -39,6 +40,7 @@ function App({component: Component, authed, ...rest}) {
                             <Route path="/register" component={RegisterPage} />
                             <Route path="/question-1" component={QuestionPage1} />
                             <Route path="/question-2" component={QuestionPage2} />
+                            <Route path="/question-3" component={QuestionPage3} />
                             <Route path="/congrats" component={CongratsPage} />
                             <Route path="/confirm" component={ConfirmPage} />
                             <Route path="/group" component={GroupPage} />
