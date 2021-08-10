@@ -3,6 +3,7 @@
   background: #fff0e8;
   flex-direction: column;
   width: 100%;
+  caret-color: transparent;
 }
 .question-margin {
   width: 100%;

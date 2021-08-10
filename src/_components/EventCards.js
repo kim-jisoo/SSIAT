@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './EventCards.css'
-import EventCard from './EventCard.js'
-
+import Card from './Card.js'
+import SamplePicture from "../data/_images/rendered_15.jpg"
 class EventCards extends Component {
     render() {
         return (
@@ -18,10 +18,10 @@ class EventCards extends Component {
                 
                 </div>
                 <div className="event-cards-multiple">
-                    <EventCard/>
-                    <EventCard/>
-                    <EventCard/>
-                    <EventCard/>
+                    <Card image={SamplePicture} subtitle="카테고리 이름" title="그룹 이름" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                    <Card image={SamplePicture} subtitle="카테고리 이름" title="그룹 이름" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                    <Card image={SamplePicture} subtitle="카테고리 이름" title="그룹 이름" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                    <Card image={SamplePicture} subtitle="카테고리 이름" title="그룹 이름" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
                 </div>
             </div>
         )

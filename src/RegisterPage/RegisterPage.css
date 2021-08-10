@@ -79,6 +79,7 @@
   background-color: #ffffff;
   flex-direction: row;
   display: flex;
+  caret-color: transparent;
 }
 
 .button-link {

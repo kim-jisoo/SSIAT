@@ -5,6 +5,7 @@
   flex-direction: column;
   margin-left: 30%;
   width: 100%;
+  caret-color: transparent;
 }
 .question-margin {
   width: 100%;

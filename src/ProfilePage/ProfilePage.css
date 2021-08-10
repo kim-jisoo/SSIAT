@@ -1,0 +1,107 @@
+.profile-avatar {
+  width: 160%;
+  border-radius: 200px;
+}
+.profile-container {
+  display: flex;
+  caret-color: transparent;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+.profile-col-sm {
+  margin-top: 20%;
+  margin-left: 25%;
+}
+.profile-col-1 {
+  margin-top: 3%;
+  margin-left: 40px;
+  display: flex;
+  width: 33%;
+}
+.profile-col-2 {
+  background-color: var(--token-3676f7af-951b-49ac-a0ba-3601d1c2f17e, #fbf9f9);
+  width: 66%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.profile-groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile-card-grouped {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 5%;
+}
+.row {
+  margin-left: 40px;
+}
+
+.profile-button {
+  margin-left: 80%;
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--token-b2436a0b-8495-4dfb-bfb8-80f05a6d3637, #95e8cf);
+  color: var(--D_Gray, #525252);
+  overflow: hidden;
+  border-radius: 102px;
+  border: 4px solid var(--token-b2436a0b-8495-4dfb-bfb8-80f05a6d3637, #95e8cf)
+    /* {"name":"mint green"} */;
+}
+.profile-button:hover {
+  background-color: #ffffff;
+
+  border: 3px solid var(--token-b2436a0b-8495-4dfb-bfb8-80f05a6d3637, #95e8cf)
+    /* {"name":"mint green"} */;
+}
+.profile-name {
+  margin: 15%;
+  width: auto; /* 83px */
+  height: auto; /* 55px */
+  overflow: visible;
+  white-space: pre;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+.profile-user {
+  margin-left: 15%;
+  width: auto; /* 187px */
+  height: auto; /* 43px */
+  overflow: visible;
+  white-space: pre;
+  font-weight: 100;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.profile-title {
+  overflow: visible;
+  white-space: pre;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #000000;
+  font-size: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}

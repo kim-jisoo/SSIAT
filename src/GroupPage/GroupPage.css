@@ -155,6 +155,7 @@
 .group-scroll {
   display: flex;
   flex-direction: column;
+  caret-color: transparent;
 }
 .group-share {
   margin-bottom: 8px;
