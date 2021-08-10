@@ -1,8 +1,4 @@
 import React, {useState} from 'react';
-// import Avatar from '@material-ui/core/Avatar';
-// import { makeStyles } from '@material-ui/core/styles';
-import {HiChevronDown} from "react-icons/hi"
-
 import NavBarLogo from "../data/_images/NavBarLogo.png";
 import Avatar from "./Avatar"
 import './Navbar.css'
