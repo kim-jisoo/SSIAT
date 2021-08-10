@@ -71,8 +71,6 @@ function LoginPage() {
             dispatch(userActions.login(email, password, from));
         }
     }
-    
-  
 
     return (
         <div className="login-page">

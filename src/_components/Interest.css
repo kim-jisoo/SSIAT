@@ -1,0 +1,10 @@
+.interest-button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  background-color: var(--token-0f3acdb6-3ec8-4aad-9768-ad073303c8d7, #ffffff);
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--token-ee778ac9-2c92-47f7-b1ec-c1570771fb6e, #8db1bf)
+    /* {"name":"M Green"} */;
+}

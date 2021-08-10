@@ -22,6 +22,7 @@
   overflow: visible;
   display: flex;
   align-content: center;
+  justify-content: space-evenly;
 }
 
 .nav-bar-logo {

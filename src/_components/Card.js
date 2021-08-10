@@ -13,7 +13,7 @@ function Card(props) {
     //     </div>
     // </div>
 
-    <div class="card" style={{width: "18rem",}}>
+    <div class="card" style={{width: "20rem",}}>
     <img class="card-img-top" src={props.image} alt="Card image cap"/>
     <div class="card-body">
         <h5 class="card-title">{props.subtitle}</h5>
