@@ -1,0 +1,20 @@
+.message-container {
+  display: flex;
+  flex-direction: row;
+  caret-color: transparent;
+  background-color: var(--token-3676f7af-951b-49ac-a0ba-3601d1c2f17e, #fbf9f9);
+}
+.message-list {
+  margin-top: 3%;
+  margin-left: 4%;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+}
+.message-col-2 {
+  width: 66%;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}

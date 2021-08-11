@@ -5,7 +5,7 @@ import Avatar from './Avatar';
 
 function MemberCard(props) {
     return(
-        <div className="member-container">
+        <div className={"member-container" + (props.styleName || "")}>
             <div className="member-row-1">
                 <Avatar styleName="member-avatar"/>
                 <text className="member-name">{props.name}</text>

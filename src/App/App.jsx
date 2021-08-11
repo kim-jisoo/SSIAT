@@ -15,6 +15,7 @@ import {CongratsPage} from '../CongratsPage';
 import {ConfirmPage} from '../ConfirmPage';
 import {GroupPage} from '../GroupPage';
 import {ProfilePage} from '../ProfilePage';
+import {MessagePage} from '../MessagePage';
 
 function App({component: Component, authed, ...rest}) {
     const alert = useSelector(state => state.alert);
@@ -46,6 +47,7 @@ function App({component: Component, authed, ...rest}) {
                             <Route path="/confirm" component={ConfirmPage} />
                             <Route path="/group" component={GroupPage} />
                             <Route path="/profile" component={ProfilePage} />
+                            <Route path="/message" component={MessagePage} />
                             <Redirect from="*" to="/" />
                         </Switch>
                     </Router>
